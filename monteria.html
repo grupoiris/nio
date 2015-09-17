@@ -26,9 +26,9 @@
 			<a href="index.html" class="boton_inicio">inicio</a>
 			<div class="menu_left">
 				<a href="nio.html"><img src="images/nio.jpg"></a>
-				<a href="#!" class="active"><img src="images/ciudadela-nio.jpg"><img src="images/neiva.png" /></a>
+				<a href="ciudadela.html" ><img src="images/ciudadela-nio.jpg"><img src="images/neiva.png" /></a>
 				<a href="kea.html"><img src="images/torre-kea.jpg"><img src="images/ibague.png" /></a>
-				<a href="monteria.html"><img src="images/monteria.jpg"></a>
+				<a href="#!" class="active"><img src="images/monteria.jpg"></a>
 				<a href="#!" class="icon_slide" onclick="icon_slide('open')" data-other-action="icon_slide('close')"><img src="images/ico_slide.png" data-other-src="images/ico_slide_left.png" ></a>
 			</div>
 			<div class="sub_menu_left">
@@ -43,9 +43,7 @@
 			<!-- Contenido general plantilla -->
 			<div class="wrapper_general_inicial">
 				<div class="full_content_wrapper grey_bg">
-					<h3>Crecer es la decisión que hace la diferencia.</h3>
-					<p>¡En Ciudadela NIO tendrás la exclusividad de estar cerca a todo!</p>
-					<h2>NEIVA</h2>
+					<h2>PROXIMAMENTE</h2>
 				</div>
 				<div class="full_content_wrapper wrap_boton_registro">
 					<a href="#" class="button boton_redondo" onclick="openRegister()">registrate</a>
@@ -150,7 +148,9 @@
 	</body>
 	<script>
 		$( document ).ready(function() {
-			setTimeout(function(){ $('.icon_slide').click(); }, 1000);
+			//setTimeout(function(){ $('.icon_slide').click(); }, 1000);
+			$('.icon_slide').hide();
+			$('.sub_menu_left').hide();
 			$('.left_side').addClass("fadeInLeft animated");
 		});
 		var swiper = new Swiper('.swiper-container', {
