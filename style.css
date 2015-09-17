@@ -223,9 +223,41 @@ body{
 	    position: relative;
     margin-top: 8%;
 }
+
 .grey_bg{
 	margin-top:20%;
 	background: rgba(0,0,0,0.7);
+}
+.grey_bg .col3{
+	width: 30%;
+	margin: 1%;
+	display: block;
+	float: left;
+	    margin-top: 20px;
+	text-align: center;
+}
+.grey_bg .col3 h3{
+	font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+        margin-bottom: 10px;
+}
+.grey_bg .col3 .image_sec_nio{
+	width: 100%;
+	text-align: center;
+}
+.grey_bg .col3 p{
+	font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.grey_bg_big{
+	margin-top: 11%;
+    height: 511px;
 }
 .full_content_wrapper h3{
 	font-size: 30pt;
