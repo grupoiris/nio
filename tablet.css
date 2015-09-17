@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+	.body_home .content_wrapper{
+		margin-top: 20%;
+	}
+	.content_slide{
+		height: 410px;
+		top: 26%
+	}
+	.content_slide .full_content_wrapper {
+		width: 70%;
+		padding: 25px 10% 25px 20%;
+	}
+}

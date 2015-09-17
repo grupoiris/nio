@@ -1,0 +1,452 @@
+@font-face {
+    font-family: DIN;
+    font-weight: bold;
+    src: url("font/DINBold.ttf");
+}
+@font-face {
+    font-family: DIN;
+    font-weight: lighter;
+    src: url("font/DINLight.ttf");
+}
+@font-face {
+    font-family: DIN;
+    font-weight: normal;
+    src: url("font/DINMedium.ttf");
+}
+@font-face {
+    font-family: DIN;
+    font-weight: inherit;
+    src: url("font/DINRegular.ttf");
+}
+body{
+	background: #FFF  no-repeat;
+	color:#fff;
+	/*font-family: "MS Sans Serif";*/
+	font-family:DIN;
+	margin:0px;
+	padding: 0px;
+	background-size: cover;
+	overflow-y: hidden;
+	height: 100%;
+}
+.body_home{
+	background-image: url("images/bg_1.jpg");
+}
+.body_ciudadela{
+	background-image: url("images/bg_2.jpg");
+}
+.content_nio_home{
+	-webkit-animation-duration: 3s !important; /* Chrome, Safari, Opera */
+    animation-duration: 3s !important;
+}
+.stick_logo{
+	position: absolute;
+	right: 0;
+	max-width: 20%;
+	max-height: 20%;
+}
+.stick_logo img{
+	max-width:100%; 
+	max-height: 100%;
+}
+.stick_web{
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	max-width: 160px;
+}
+.content_wrapper{
+	position:relative;
+	left:10%;
+	max-width: 1500px;
+	top:20%;
+	width: 80%;
+	margin:auto;
+	float: left;
+	margin-top: 10%;
+    text-align: center;
+}
+.content_wrapper .col3{
+	width: 30%;
+	max-width: 220px;
+	margin: 1%;
+	display: -webkit-inline-box;
+} 
+.content_wrapper .col3 img{
+	max-width: 100%;
+}
+.button{
+	width: 80%;
+	color:#fff;
+	float: left;
+	padding: 15px 10%;
+	text-decoration: none;
+	text-align: center;
+	background:#e95426 url("images/icon_botton.png") no-repeat;
+	background-position: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+} 
+.button:hover{
+	background:#f2663b url("images/icon_botton.png") no-repeat;
+	background-position: 20px;
+}
+.col1{
+	width: 100%;
+	max-width:1500px;
+	margin:auto;
+	text-align: center;
+	float: left;
+	margin-top: 10%;
+}
+.boton_redondo{
+	width: 		230px;	
+	height:		30px;
+	padding: 	7px 35px;
+	background:	#e95426;
+	border: 	#f6f6f8 2px solid;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float: none;
+}
+.boton_redondo:hover{
+	background:#f2663b;
+}
+
+
+/* ESTILOS INTERNAs */
+.left_side{
+	width: 130px;
+	position: absolute;
+	left:0px;
+	height: 80%;
+	background: #4c4a4b;
+	padding: 10% 0 ;
+    z-index: 3;
+}
+.left_side .menu_left{
+	top: 17%;
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+	-webkit-box-shadow: 10px 0px 17px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 17px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 17px -6px rgba(0,0,0,0.75);
+}
+.left_side .sub_menu_left{
+	height: auto;
+	width: 100px;
+	top: 22.5%;
+	left:37px;
+	position: absolute;
+    background: #fff;
+	z-index: 2;
+	-webkit-box-shadow: 10px 0px 2px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 0px 2px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 0px 2px -6px rgba(0,0,0,0.75);
+}
+.left_side .boton_inicio{
+	background: #474646;
+	color: #8e8d8d;
+	width: 100%;
+	position: absolute;
+	top:0;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding:7% 0%;
+	font-size: 12px;
+}
+.menu_left a{
+	background: #fff;
+	float:left;
+	border-bottom: 1px solid #eeeeee;
+	padding: 10px 10px;
+}
+.menu_left a img{
+	max-width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.menu_left a:hover{
+	border-left: #e95426 5px solid;
+	padding: 10px 0px;
+}
+.menu_left .active{
+	border-left: #e95426 5px solid;
+	padding: 10px 0px;
+}
+.menu_left .active img{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+.icon_slide{
+	padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    position: absolute;
+    right: -15px;
+    top: 47%;
+}
+.sub_menu_left a{
+    width: 100%;
+    height:13%;
+    text-align: center;
+    float: left;
+	margin: 0px 0px;
+    padding: 25px 0px;
+   -webkit-box-shadow: 0px -3px 11px -5px rgba(148,148,148,1);
+	-moz-box-shadow: 0px -3px 11px -5px rgba(148,148,148,1);
+	box-shadow: 0px -3px 11px -5px rgba(148,148,148,1);
+}
+.sub_menu_left a:hover{
+	background: rgba(90,139,130,0.8) url("images/flecha_menu_activo.png") no-repeat;
+	background-position-y: 50%;
+	background-position-x: 98%;
+}
+.sub_menu_left_active{
+	background: rgba(90,139,130,0.8) url("images/flecha_menu_activo.png") no-repeat;
+	background-position-y: 50%;
+	background-position-x: 98%;
+}
+.full_content_wrapper{
+	    width: 65%;
+    height: 88%;
+    text-align: center;
+    float: left;
+    padding: 25px 15% 25px 20%;
+}
+.wrap_boton_registro{
+	    position: relative;
+    margin-top: 8%;
+}
+.grey_bg{
+	margin-top:20%;
+	background: rgba(0,0,0,0.7);
+}
+.full_content_wrapper h3{
+	font-size: 30pt;
+	font-weight: bold;
+	margin: auto;
+}
+.full_content_wrapper p{
+	font-size: 12pt;
+	font-weight: 100;
+	margin: 5px;
+}
+.full_content_wrapper h2{
+	font-size: 33pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.content_slide{
+	height: 420px;
+	top: 27%;
+	width:100%;
+	position: absolute;
+    background: #fff;
+	z-index: 1;
+	display: none;
+	opacity: 0;
+}
+.content_section{
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+.content_section img{
+	max-height: 100%;
+	min-width: 320px;
+	float: left;
+	max-width: 50%;
+	margin-top: 50px;
+}
+.content_text{
+	width: 45%;
+	margin-left:5%;
+    float: left;
+	min-width: 320px;
+    color:#777777
+}
+.content_text h3{
+	width: 100%;
+	float: left;
+	text-align: left;
+}
+.hr_middle{
+	width: 50%;
+    float: left;
+    margin-top: 15px;
+	border: 1px solid #e5e5e5;
+}
+.content_text .textarea{
+	width:100%;
+    height: 225px;
+    margin: auto;
+    margin-top:100px;
+	padding-right: 20px;
+	text-align:left;
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 12px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 0px;
+    border-radius:0px;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+.menu_bottom{
+	position: absolute;
+	width: 30%;
+	bottom: -100px;
+	height: 75px;
+	left: 36%;
+	text-align: center;
+    z-index: 2;
+}
+.menu_bottom a{
+	float: left;
+	margin:0px 1px;
+	width: 19%;
+}
+.menu_bottom a img{
+	max-width: 100%;
+}
+.menu_bottom a:hover{
+	margin-top: -5px;
+	border-bottom: 10px solid rgba(255,255,255,0.6);
+}
+
+.blur{
+	-webkit-filter: blur(3px);
+	  -moz-filter: blur(3px);
+	  -o-filter: blur(3px);
+	  -ms-filter: blur(3px);
+	  filter: blur(3px);
+}
+.lightbox_bg{
+	display:none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9;
+	background: rgba(0,0,0,0.2); 
+}
+#modal{
+	/*opacity:0;*/
+	position: absolute;
+	width: 30%;
+	height: 55%;
+	right: 25%;
+	background: rgba(200,200,200,0.7);
+	border:1px solid rgba(255,255,255,0.8);
+	top: 10%;
+	padding: 5% 2%;
+}
+#modal h2{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+#modal  .close_modal{
+	position: absolute;
+	right:20px;
+	top:20px;
+}
+.register_form{
+	width: 80%;
+	margin :5% auto;
+}
+.register_form input{
+	width: 100%;
+	border:none;
+	background: rgba(70,70,68,0.4);
+	padding: 15px 10px;
+	color:#fff;
+	margin: 5px 0px;
+}
+.register_form .input_check{
+	float: left;
+	width: 100%;
+	height: 25px;
+    margin-bottom: 5px;
+}
+.register_form .input_check input[type="checkbox"]{
+	float: left;
+	width: 20px;
+}
+.register_form .input_check label{
+	float: left;
+}
+.register_form .input_submit{
+	width: 100%;
+	text-align: center;
+}
+.register_form select{
+	width: 105%;
+	border:none;
+	background: rgba(70,70,68,0.4);
+	padding: 15px 10px;
+	color:#fff;
+	margin: 5px 0px;
+}
+.register_form textarea{
+	width: 100%;
+	border:none;
+	background: rgba(70,70,68,0.4);
+	padding: 15px 10px;
+	color:#fff;
+	margin: 5px 0px;
+	height: 100px;
+}
+
+/*         ------------------Estilos para galeria ----------------  */
+.wrapper_general_galerias{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;	
+}
+.wrapper_general_galerias img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+	z-index: 0;
+}
+.swiper-container {
+      width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color:#000;
+    /*position: absolute !important;*/
+}
+.swiper-slide {
+   background-position: center;
+        background-size: cover;
+}
+.swiper-container-horizontal>.swiper-pagination{
+	    top: 10px;
+	    bottom:auto; 
+}

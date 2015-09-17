@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Ciudadela NIO - NIO Constructora </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="tablet.css" />
+		<link rel="stylesheet" type="text/css" href="animate.css" />
+		
+		<script src="jquery.min.js"></script>
+		<script type="text/javascript" src="general.js"></script>
+		
+		<link rel="stylesheet" href="swiper/css/swiper.min.css">
+		<script src="swiper/js/swiper.min.js"></script>
+	</head>
+
+	<body class="body_ciudadela">
+		<!-- menu costado izquierdo -->
+		<div class="left_side">
+			<a href="index.html" class="boton_inicio">inicio</a>
+			<div class="menu_left">
+				<a href="home.html"><img src="images/nio.jpg"></a>
+				<a href="#" class="active"><img src="images/ciudadela-nio.jpg"></a>
+				<a href="#"><img src="images/torre-kea.jpg"></a>
+				<a href="#"><img src="images/monteria.jpg"></a>
+				<a href="#" class="icon_slide" onclick="icon_slide('open')" data-other-action="icon_slide('close')"><img src="images/ico_slide.png" data-other-src="images/ico_slide_left.png" ></a>
+			</div>
+			<div class="sub_menu_left">
+				<a href="#" class="sub_menu_left_item" rel="content_info"><img src="images/ico_info.png"></a>
+				<a href="#" class="sub_menu_left_item" rel="content_vivienda"><img src="images/ico_home.png"></a>
+				<a href="#" class="sub_menu_left_item" rel="content_oficinas"><img src="images/ico_oficinas.png"></a>
+				<a href="#" class="sub_menu_left_item" rel="content_hotel"><img src="images/ico_hotel.png"></a>
+			</div>
+		</div>
+		
+		<div class="wrapper_general">
+			<!-- Contenido general plantilla -->
+			<div class="wrapper_general_inicial">
+				<div class="full_content_wrapper grey_bg">
+					<h3>Crecer es la decisión que hace la diferencia.</h3>
+					<p>¡En Ciudadela NIO tendrás la exclusividad de estar cerca a todo!</p>
+					<h2>NEIVA</h2>
+				</div>
+				<div class="full_content_wrapper wrap_boton_registro">
+					<a href="#" class="button boton_redondo" onclick="openRegister()">registrate</a>
+				</div>
+			</div>
+			<!-- Contenido del menu -->
+			<div class="content_slide">
+				<div class="full_content_wrapper">
+					<div class="content_section content_info">
+						<img src="images/ciudadela/info.jpg">
+						<div class="content_text">
+								<h3>Información de proyecto</h3>
+								<hr class="hr_middle">
+								<div class="textarea">
+									<p>Donec lobortis placerat elementum. Nullam pretium, sem ultrices tincidunt volutpat, felis dui tristique magna, ut vestibulum turpis massa vel orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras faucibus tellus non arcu facilisis laoreet. Nullam suscipit et nisi ut fringilla. In sodales aliquam lectus, vitae molestie sem posuere ac. Nullam quis interdum tellus.
+									Nunc non ultrices velit, sed tincidunt enim. Fusce eget nunc nisl. Praesent lobortis quam ac finibus gravida. In hac habitasse platea dictumst. Aenean volutpat feugiat orci, id dapibus nibh facilisis venenatis. Donec scelerisque risus non fringilla congue. In hac habitasse platea dictumst. Vivamus nisi elit, semper sed mauris ullamcorper, sodales blandit lectus.</p> 
+								</div>
+						</div>
+					</div>
+					<div class="content_section content_vivienda">
+						<!--<img src="images/ciudadela/info.jpg">-->
+						<div class="content_text">
+								<h3>Información de vivieda</h3>
+								<hr class="hr_middle">
+								<div class="textarea">
+									<p>Donec lobortis placerat elementum. Nullam pretium, sem ultrices tincidunt volutpat, felis dui tristique magna, ut vestibulum turpis massa vel orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras faucibus tellus non arcu facilisis laoreet. Nullam suscipit et nisi ut fringilla. In sodales aliquam lectus, vitae molestie sem posuere ac. Nullam quis interdum tellus.
+									Nunc non ultrices velit, sed tincidunt enim. Fusce eget nunc nisl. Praesent lobortis quam ac finibus gravida. In hac habitasse platea dictumst. Aenean volutpat feugiat orci, id dapibus nibh facilisis venenatis. Donec scelerisque risus non fringilla congue. In hac habitasse platea dictumst. Vivamus nisi elit, semper sed mauris ullamcorper, sodales blandit lectus.</p> 
+								</div>
+						</div>
+					</div>
+					<div class="content_section content_oficinas">
+						<img src="images/ciudadela/info.jpg">
+						<div class="content_text">
+								<h3>Información de oficinas</h3>
+								<hr class="hr_middle">
+								<div class="textarea">
+									<p>Donec lobortis placerat elementum. Nullam pretium, sem ultrices tincidunt volutpat, felis dui tristique magna, ut vestibulum turpis massa vel orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras faucibus tellus non arcu facilisis laoreet. Nullam suscipit et nisi ut fringilla. In sodales aliquam lectus, vitae molestie sem posuere ac. Nullam quis interdum tellus.</p>
+								</div>
+						</div>
+					</div>
+					<div class="content_section content_hotel">
+						<img src="images/ciudadela/info.jpg">
+						<div class="content_text">
+								<h3>Información de hotel</h3>
+								<hr class="hr_middle">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- Menu Inferior-->
+			<div class="menu_bottom">
+				<a href="#"><img src="images/menu_btn_renders.jpg" onclick="opengallery();" /></a>
+				<a href="#"><img src="images/menu_btn_video.jpg" /></a>
+				<a href="#"><img src="images/menu_btn_tour.jpg" /></a>
+				<a href="#"><img src="images/menu_btn_fotos.jpg" onclick="opengallery();" /></a>
+				<a href="#"><img src="images/menu_btn_mapa.jpg" /></a>
+				
+			</div>
+			
+			<!-- Contenido Galerias -->
+			<div class="wrapper_general_galerias">
+				<!-- Swiper -->
+			    <div class="swiper-container">
+			    	<!-- Add Pagination -->
+			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-wrapper">
+			        	<div class="swiper-slide" style="background-image:url(images/bg_1.jpg)"></div>
+			            <div class="swiper-slide" style="background-image:url(images/bg_2.jpg)"></div>
+			            <div class="swiper-slide" style="background-image:url(images/bg_3.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(images/bg_4.jpg)"></div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="lightbox_bg">
+			<div id="modal">
+				<img src="images/close_modal.png" class="close_modal" onclick="closeModal()">
+				<h2>REGISTRA TUS DATOS</h2>
+				<form class="register_form">
+					<input type="text" placeholder="Nombre y Apellidos">
+					<input type="text" placeholder="Teléfono">
+					<input type="text" placeholder="E-mail">
+					<select>
+						<option>Que opcion te interesa</option>
+						<option>Ciudadela NIO</option>
+						<option>Torre KEA</option>
+						<option>Montería</option>
+					</select>
+					<textarea placeholder="Comentarios"></textarea>
+					<div class="input_check">
+						<input type="checkbox"><label>Acepto términos y condiciones</label>
+					</div>
+					<div class="input_submit">
+						<a href="#" class="button boton_redondo">ENVIA TUS DATOS</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<img src="images/stick_web.png" class="stick_web" />
+	</body>
+	<script>
+		$( document ).ready(function() {
+			setTimeout(function(){ $('.icon_slide').click(); }, 1000);
+			$('.left_side').addClass("fadeInLeft animated");
+		});
+		var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        loop: true,
+		        autoplay : 2000
+		    });
+	</script>
+</html>
