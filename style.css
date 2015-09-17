@@ -127,7 +127,7 @@ body{
     z-index: 3;
 }
 .left_side .menu_left{
-	top: 17%;
+	top: 15%;
 	width: 100%;
 	position: absolute;
 	z-index: 3;
@@ -164,6 +164,7 @@ body{
 	float:left;
 	border-bottom: 1px solid #eeeeee;
 	padding: 10px 10px;
+	    text-align: center;
 }
 .menu_left a img{
 	max-width: 100%;
@@ -378,7 +379,7 @@ body{
 .register_form input{
 	width: 100%;
 	border:none;
-	background: rgba(70,70,68,0.4);
+	background: rgba(70,70,68,0.2);
 	padding: 15px 10px;
 	color:#fff;
 	margin: 5px 0px;

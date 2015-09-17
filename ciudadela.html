@@ -10,6 +10,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="tablet.css" />
+		<link rel="stylesheet" type="text/css" href="celulares.css" />
 		<link rel="stylesheet" type="text/css" href="animate.css" />
 		
 		<script src="jquery.min.js"></script>
@@ -25,8 +26,8 @@
 			<a href="index.html" class="boton_inicio">inicio</a>
 			<div class="menu_left">
 				<a href="home.html"><img src="images/nio.jpg"></a>
-				<a href="#" class="active"><img src="images/ciudadela-nio.jpg"></a>
-				<a href="#"><img src="images/torre-kea.jpg"></a>
+				<a href="#" class="active"><img src="images/ciudadela-nio.jpg"><img src="images/neiva.png" /></a>
+				<a href="#"><img src="images/torre-kea.jpg"><img src="images/ibague.png" /></a>
 				<a href="#"><img src="images/monteria.jpg"></a>
 				<a href="#" class="icon_slide" onclick="icon_slide('open')" data-other-action="icon_slide('close')"><img src="images/ico_slide.png" data-other-src="images/ico_slide_left.png" ></a>
 			</div>
@@ -126,21 +127,21 @@
 				<img src="images/close_modal.png" class="close_modal" onclick="closeModal()">
 				<h2>REGISTRA TUS DATOS</h2>
 				<form class="register_form">
-					<input type="text" placeholder="Nombre y Apellidos">
-					<input type="text" placeholder="Teléfono">
-					<input type="text" placeholder="E-mail">
-					<select>
-						<option>Que opcion te interesa</option>
+					<input type="text" placeholder="Nombre y Apellidos" class="form_nombre">
+					<input type="text" placeholder="Teléfono" class="form_telefono">
+					<input type="text" placeholder="E-mail" class="form_email">
+					<select  class="form_select">
+						<option>Que proyecto te interesa</option>
 						<option>Ciudadela NIO</option>
 						<option>Torre KEA</option>
 						<option>Montería</option>
 					</select>
-					<textarea placeholder="Comentarios"></textarea>
-					<div class="input_check">
+					<textarea placeholder="Comentarios"  class="form_comentarios"></textarea>
+					<div class="input_check form_terminos">
 						<input type="checkbox"><label>Acepto términos y condiciones</label>
 					</div>
 					<div class="input_submit">
-						<a href="#" class="button boton_redondo">ENVIA TUS DATOS</a>
+						<a href="#" class="button boton_redondo" id="saveData">ENVIA TUS DATOS</a>
 					</div>
 				</form>
 			</div>

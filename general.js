@@ -25,6 +25,22 @@ $( document ).ready(function() {
 		$('.'+content_to_show).show();
 		$( ".content_slide" ).animate({	     opacity: 1,  }, 1000, function() {});
 	});
+	
+	$('#saveData').click(function(){
+		alert("a");
+		var form_name= $('.form_nombre').val();
+		var form_telefono= $('.form_telefono').val();
+		var form_email= $('.form_email').val();
+		var form_select= $('.form_select').val();
+		var form_comentarios= $('.form_comentarios').val();
+		var form_terminos= $('.form_terminos').val();
+		console.log("form_name"+form_name);
+		console.log("form_telefono"+form_telefono);
+		console.log("form_email"+form_email);
+		console.log("form_select"+form_select);
+		console.log("form_comentarios"+form_comentarios);
+		console.log("form_terminos"+form_terminos);
+	});
 });
 function openRegister(){
 	icon_slide('close');

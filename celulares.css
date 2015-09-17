@@ -1,0 +1,66 @@
+@media (min-width: 600px) {
+	.left_side{
+		width: 80px;
+	}
+	.left_side .menu_left{
+		top: 20px;
+	}
+	.menu_left a{
+	    padding: 0px 0px;
+	}
+	.menu_left .active{
+		padding: 0px 0px;
+	}
+	.left_side .sub_menu_left{
+		width: 60px;
+		top: 95px;
+		left:80px !important;
+	}
+	.sub_menu_left a{
+		padding: 5px 0px;
+	}
+	.sub_menu_left a img{
+		max-width: 70%;
+	}
+	.full_content_wrapper{
+		height: 45%;
+		padding: 5px 5% 5px 20%;
+	}
+	.grey_bg{
+		margin-top: 15%;
+	}
+	.menu_bottom{
+		height: 39px;
+	}
+	.full_content_wrapper{
+	    width: 75%;
+	}
+	.full_content_wrapper h3{
+		font-size: 18pt;
+	}
+	.full_content_wrapper h2{
+		font-size: 26pt;
+		margin:5px;
+	}
+	.wrap_boton_registro{
+		margin-top: 4%;
+	}
+	.content_slide{
+		height: auto;	
+	}
+	.content_section img{
+		min-width: 40%;
+	}
+	.content_text{
+		min-width: auto;
+	}
+	.content_text .textarea{
+		height: 111px;
+	}
+	.content_nio_home{
+		margin-top:0;
+	}
+	.content_nio_home .col1{
+		margin-top: 0;
+	} 
+}
