@@ -6,7 +6,7 @@
 		version     = "01" >
 	<!-- versionCode is optional and Android only -->
 	
-	<name>NIO constructora/name>
+	<name>NIO constructora</name>
 	<description>
 		Aplicativo de NIO Constructora	
 	</description>
