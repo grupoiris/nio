@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns   = "http://www.w3.org/ns/widgets"
+		xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "com.nio.nioconstructora"
+		versionCode = "01"
+		version     = "01" >
+	<!-- versionCode is optional and Android only -->
+	
+	<name>NIO constructora/name>
+	<description>
+		Aplicativo de NIO Constructora	
+	</description>
+	<author href="https://irisdev.co" email="julian.montoya@grupoiris.co	">
+			Grupo Iris - Julian Montoya
+	</author>
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="keepRunning" value="true" />
+	<preference name="permissions" value="none"/>
+	
+	<access origin="*"  launch-external="yes"/>
+	
+	<icon src="res/icon/icon.png" /> 	
+	<gap:splash src="res/screen/screen.png" />
+	
+</widget>
