@@ -1,6 +1,6 @@
-@media (min-width: 600px) {
+@media (max-width:600px) {
 	.left_side{
-		width: 80px;
+		width: 60px;
 	}
 	.left_side .menu_left{
 		top: 20px;
@@ -12,9 +12,12 @@
 		padding: 0px 0px;
 	}
 	.left_side .sub_menu_left{
-		width: 60px;
-		top: 95px;
-		left:80px !important;
+		width: 45px;
+		top: 70px;
+		left:60px !important;
+	}
+	.button{
+		    font-size: 10px;
 	}
 	.sub_menu_left a{
 		padding: 5px 0px;
@@ -24,7 +27,7 @@
 	}
 	.full_content_wrapper{
 		height: 45%;
-		padding: 5px 5% 5px 20%;
+		padding: 5px 2% 5px 20%;
 	}
 	.grey_bg{
 		margin-top: 15%;
@@ -33,7 +36,7 @@
 		height: 39px;
 	}
 	.full_content_wrapper{
-	    width: 75%;
+	    width: 80%;
 	}
 	.full_content_wrapper h3{
 		font-size: 18pt;
@@ -42,11 +45,15 @@
 		font-size: 26pt;
 		margin:5px;
 	}
+	.full_content_wrapper p{
+		font-size: 10pt;
+	}
 	.wrap_boton_registro{
 		margin-top: 4%;
 	}
 	.content_slide{
-		height: auto;	
+		height: 199px;
+    	top: 22%;
 	}
 	.content_section img{
 		min-width: 40%;
@@ -54,8 +61,12 @@
 	.content_text{
 		min-width: auto;
 	}
+	.content_text hr{
+		display: none;
+	}
 	.content_text .textarea{
 		height: 111px;
+		    margin-top: 0px;
 	}
 	.content_nio_home{
 		margin-top:0;
