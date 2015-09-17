@@ -16,6 +16,7 @@
 	<preference name="exit-on-suspend" value="true" />
 	<preference name="keepRunning" value="true" />
 	<preference name="permissions" value="none"/>
+	<preference name="orientation" value="landscape" />
 	
 	<access origin="*"  launch-external="yes"/>
 	
