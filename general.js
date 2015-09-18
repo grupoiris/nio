@@ -24,6 +24,14 @@ $( document ).ready(function() {
 		$('.content_section').hide();
 		$('.'+content_to_show).show();
 		$( ".content_slide" ).animate({	     opacity: 1,  }, 1000, function() {});
+		
+		if(content_to_show=="content_oficinas" || content_to_show=="content_hotel" || content_to_show=="content_vivienda"){
+			$('.menu_btn_fotos').hide();
+			$('.menu_bottom').css('left',"41%");
+		}else{
+			$('.menu_btn_fotos').show();
+			$('.menu_bottom').css('left',"36%");
+		}
 	});
 	
 	$('#saveData').click(function(){
