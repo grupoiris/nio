@@ -17,6 +17,8 @@
 	<preference name="keepRunning" value="true" />
 	<preference name="permissions" value="none"/>
 	<preference name="orientation" value="landscape" />
+	<preference name="UIWebViewBounce" value="false" />
+	<preference name="DisallowOverscroll" value="true" />
 	
 	<access origin="*"  launch-external="yes"/>
 	
