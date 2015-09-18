@@ -1,5 +1,6 @@
 function icon_slide(action){
 	closegallery();
+	closerender();
 	closemapa();
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -18,6 +19,8 @@ function icon_slide(action){
 $( document ).ready(function() {
 	$('.sub_menu_left_item').click(function(){
 		closegallery();
+		closerender();
+		closemapa();
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$(this).addClass("sub_menu_left_active");
 		content_to_show = $(this).attr('rel');
@@ -31,7 +34,7 @@ $( document ).ready(function() {
 			$('.menu_bottom').css('left',"41%");
 		}else{
 			$('.menu_btn_fotos').show();
-			$('.menu_bottom').css('left',"36%");
+			$('.menu_bottom').css('left',"38%");
 		}
 	});
 	
@@ -51,6 +54,15 @@ $( document ).ready(function() {
 		console.log("form_terminos"+form_terminos);
 	});
 });
+function closeTerms(){
+	$('.check_terms').prop('checked', true);
+	$('#modal_2').hide();
+	$('#modal').show();
+}
+function openTerms(){
+	$('#modal').hide();
+	$('#modal_2').show();
+}
 function openRegister(){
 	icon_slide('close');
 	$('.wrapper_general').addClass('blur');
@@ -65,6 +77,8 @@ function closeModal(){
 	$('.lightbox_bg').removeClass("fadeIn animated");
 	$('.lightbox_bg').hide();
 }
+
+/*  ----------------      funciones mapa    ------------ */
 function openmapa(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -85,6 +99,8 @@ function closemapa(){
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
 }
+
+/*  ----------------      funciones galeria    ------------ */
 function opengallery(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -102,6 +118,28 @@ function opengallery(){
 }
 function closegallery(){
 	$('.wrapper_general_galerias').hide();
+	$('.wrapper_general_inicial').removeClass("fadeOut animated");
+	$('.wrapper_general_inicial').addClass("fadeIn");
+}
+
+/*  ----------------      funciones redes    ------------ */
+function openrender(){
+	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
+	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
+	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$('.wrapper_general_inicial').removeClass("fadeIn");
+	$('.wrapper_general_inicial').addClass("fadeOut animated");
+	if($( ".content_slide" ).is(":visible")){
+		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
+		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
+	}
+	
+	$('.wrapper_general_renders').show();
+	$('.wrapper_general_renders').addClass("fadeIn animated");
+}
+function closerender(){
+	$('.wrapper_general_renders').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
 }

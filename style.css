@@ -35,6 +35,15 @@ body{
 .body_ciudadela{
 	background-image: url("images/bg_2.jpg");
 }
+.body_kea{
+	background-image: url("images/bg_kea.jpg");
+}
+.body_nio{
+	background-image: url("images/bg_nio.jpg");
+}
+.body_monteria{
+	background-image: url("images/bg_nio.jpg");
+}
 .content_nio_home{
 	-webkit-animation-duration: 3s !important; /* Chrome, Safari, Opera */
     animation-duration: 3s !important;
@@ -136,7 +145,7 @@ body{
 .left_side .sub_menu_left{
 	height: auto;
 	width: 100px;
-	top: 22.5%;
+	top: 23.5%;
 	left:37px;
 	position: absolute;
     background: #fff;
@@ -257,8 +266,8 @@ body{
     text-align: center;
 }
 .grey_bg_big{
-	margin-top: 11%;
-    height: 511px;
+	margin-top: 9.5%;
+    height: 522px;
 }
 .full_content_wrapper h3{
 	font-size: 30pt;
@@ -325,7 +334,7 @@ body{
 	padding-right: 20px;
 	text-align:left;
 	overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .content_text .textarea ul{
 	float:left;
@@ -355,7 +364,7 @@ body{
 	width: 30%;
 	bottom: -100px;
 	height: 75px;
-	left: 36%;
+	left: 38%;
 	text-align: center;
     z-index: 2;
 }
@@ -386,6 +395,30 @@ body{
 	position: fixed;
 	z-index: 9;
 	background: rgba(0,0,0,0.2); 
+}
+#modal_2{
+	display:none;
+	position: absolute;
+	width: 35%;
+	height: auto;
+	right: 25%;
+	background: rgba(200,200,200,0.7);
+	border:1px solid rgba(255,255,255,0.8);
+	top: 10%;
+	padding: 5% 2% 2%;
+}
+#modal_2 p{
+	    font-size: 13px;
+}
+#modal_2 h2{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+#modal_2  .close_modal{
+	position: absolute;
+	right:20px;
+	top:20px;
 }
 #modal{
 	/*opacity:0;*/
@@ -511,4 +544,20 @@ body{
 .swiper-container-horizontal>.swiper-pagination{
 	    top: 10px;
 	    bottom:auto; 
+}
+/*         ----------------- Estilos para galeria ----------------  */
+.wrapper_general_renders{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;	
+}
+.wrapper_general_renders img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+	z-index: 0;
 }

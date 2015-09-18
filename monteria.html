@@ -20,7 +20,7 @@
 		<script src="swiper/js/swiper.min.js"></script>
 	</head>
 
-	<body class="body_ciudadela">
+	<body class="body_monteria">
 		<!-- menu costado izquierdo -->
 		<div class="left_side">
 			<a href="home.html" class="boton_inicio">inicio</a>
@@ -46,7 +46,7 @@
 					<h2>PROXIMAMENTE</h2>
 				</div>
 				<div class="full_content_wrapper wrap_boton_registro">
-					<a href="#" class="button boton_redondo" onclick="openRegister()">registrate</a>
+					<a href="#" class="button boton_redondo" onclick="openRegister()">regístrate</a>
 				</div>
 			</div>
 			<!-- Contenido del menu -->
@@ -135,12 +135,21 @@
 					</select>
 					<textarea placeholder="Comentarios"  class="form_comentarios"></textarea>
 					<div class="input_check form_terminos">
-						<input type="checkbox"><label>Acepto términos y condiciones</label>
+						<input type="checkbox" class="check_terms"><label onclick="openTerms();">Acepto términos y condiciones</label>
 					</div>
 					<div class="input_submit">
 						<a href="#" class="button boton_redondo" id="saveData">ENVIA TUS DATOS</a>
 					</div>
 				</form>
+			</div>
+			<div id="modal_2">
+				<img src="images/close_modal.png" class="close_modal" onclick="closeTerms()">
+				<h2>TÉRMINOS Y CONDICIONES</h2>
+				<p>El Manual de Políticas y manejo de información personal de CONSTRUCTORA NIO S.A., surge como respuesta a la necesidad de dar cumplimiento a lo ordenado en la Ley 1581 de 2012, estatutaria del Sistema de Protección de Datos Personales, así como de las normas reglamentarias y de la Sentencia C-748 de 2011.</p>
+				<p>Los destinatarios de esta regulación son todas las personas, naturales y jurídicas, que operen bases de datos que contengan información que permita individualizar a una persona, es decir, que tengan datos personales.</p>
+				<br/>
+				<p>Este manual es una herramienta vinculante establecida por CONSTRUCTORA NIO S.A. para resguardar los derechos de los Titulares de datos personales que hayan proveído o provean información a esta empresa que permita individualizarlos. La información que sea capturada en aplicación de este manual, será tratada con los más altos estándares de profesionalismo y diligencia, para asegurar a las personas naturales y también las personas jurídicas cuyos datos obran en nuestras bases de datos la integridad de su información y la eficacia de sus derechos.</p>
+					<br /><br /><a href="#" class="button boton_redondo" style="margin-left: 35%;" onclick="closeTerms()">Acepto</a>
 			</div>
 		</div>
 		<img src="images/stick_web.png" class="stick_web" />
