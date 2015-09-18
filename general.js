@@ -1,5 +1,6 @@
 function icon_slide(action){
 	closegallery();
+	closemapa();
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	if(action =="open"){
@@ -63,6 +64,26 @@ function closeModal(){
 	$('.wrapper_general').children().show();
 	$('.lightbox_bg').removeClass("fadeIn animated");
 	$('.lightbox_bg').hide();
+}
+function openmapa(){
+	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
+	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
+	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$('.wrapper_general_inicial').removeClass("fadeIn");
+	$('.wrapper_general_inicial').addClass("fadeOut animated");
+	if($( ".content_slide" ).is(":visible")){
+		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
+		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
+	}
+	
+	$('.wrapper_general_mapa').show();
+	$('.wrapper_general_mapa').addClass("fadeIn animated");
+}
+function closemapa(){
+	$('.wrapper_general_mapa').hide();
+	$('.wrapper_general_inicial').removeClass("fadeOut animated");
+	$('.wrapper_general_inicial').addClass("fadeIn");
 }
 function opengallery(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })

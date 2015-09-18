@@ -455,7 +455,25 @@ body{
 	height: 100px;
 }
 
-/*         ------------------Estilos para galeria ----------------  */
+/*         ----------------- Estilos para mapa    ------------------*/
+.wrapper_general_mapa{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;
+	overflow: hidden;	
+}
+.wrapper_general_mapa img{
+	max-width: 100%;
+	
+}
+.mapa_kea{
+	position: absolute;
+    bottom: 0;
+}
+/*         ----------------- Estilos para galeria ----------------  */
 .wrapper_general_galerias{
 	width:100%;
 	height:100%;
