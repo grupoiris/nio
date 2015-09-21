@@ -41,19 +41,13 @@ $( document ).ready(function() {
 	});
 	
 	$('#saveData').click(function(){
-		alert("a");
 		var form_name= $('.form_nombre').val();
 		var form_telefono= $('.form_telefono').val();
 		var form_email= $('.form_email').val();
 		var form_select= $('.form_select').val();
 		var form_comentarios= $('.form_comentarios').val();
 		var form_terminos= $('.form_terminos').val();
-		console.log("form_name"+form_name);
-		console.log("form_telefono"+form_telefono);
-		console.log("form_email"+form_email);
-		console.log("form_select"+form_select);
-		console.log("form_comentarios"+form_comentarios);
-		console.log("form_terminos"+form_terminos);
+		saveData(form_name, form_email, form_telefono, form_select, form_comentarios,form_terminos);
 	});
 });
 function closeTerms(){
@@ -79,6 +73,15 @@ function closeModal(){
 	$('.lightbox_bg').removeClass("fadeIn animated");
 	$('.lightbox_bg').hide();
 }
+
+function openResultados(){
+	icon_slide('close');
+	$('.wrapper_general').addClass('blur');
+	$('.wrapper_general').children().hide();
+	$('.lightbox_bg').show();
+	$('.lightbox_bg').addClass("fadeIn animated");
+	getSQL();
+}
 /*  ----------------      funciones tour    ------------ */
 function opentour(){
 	var myTour = document.getElementById("video_tour"); 
@@ -99,13 +102,13 @@ function opentour(){
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closetour(){
-	/*var myTour = document.getElementById("video_tour"); 
-	myTour.pause();*/
-	$('#video_tour').html("");
+	var myTour = document.getElementById("video_tour"); 
+	//myTour.pause();
+	/*$('#video_tour').html("");
 	alert("a");
 	var video_url = $('#video_tour').attr('rel');
 	alert(video_url);
-	//$('#video_tour').html('<source src="'+video_url+'" type="video/mp4">');
+	$('#video_tour').html('<source src="'+video_url+'" type="video/mp4">');*/
 	
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.wrapper_general_tour').hide();

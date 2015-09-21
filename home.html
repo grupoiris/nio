@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="tablet.css" />
 		<link rel="stylesheet" type="text/css" href="animate.css" />
 		<script src="jquery.min.js"></script>
+		
+		<script type="text/javascript" src="db.js"></script>
 		<script type="text/javascript" src="general.js"></script>
 	</head>
 
@@ -38,9 +40,19 @@
 		</div>
 		<img src="images/stick_web.png" class="stick_web" />
 	</body>
+	<div class="lightbox_bg" style="background: rgba(0,0,0,0.5);">
+		<div id="modal_resultados">
+			<img src="images/close_modal.png" class="close_modal" onclick="closeModal()">
+			<h2>INSCRITOS</h2>
+			<div class="resultados_inscritos"></div>
+		</div>
+	</div>
 	<script>
 		$( document ).ready(function() {
 			$('.col3').addClass("slideInUp animated");
+			$('.stick_web').click(function(){
+				openResultados();
+			});
 		});
 	</script>
 </html>
