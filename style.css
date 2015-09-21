@@ -506,6 +506,28 @@ body{
 	position: absolute;
     bottom: 0;
 }
+/*         ----------------- Estilos para tour    ------------------*/
+.wrapper_general_tour{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;
+	overflow: hidden;	
+	background: #000000;
+}
+/*         ----------------- Estilos para video    ------------------*/
+.wrapper_general_video{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;
+	overflow: hidden;	
+	background: #000000;
+}
 /*         ----------------- Estilos para galeria ----------------  */
 .wrapper_general_galerias{
 	width:100%;

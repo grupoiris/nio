@@ -120,8 +120,8 @@
 			<!-- Menu Inferior-->
 			<div class="menu_bottom">
 				<a href="#" class="menu_btn_renders"><img src="images/menu_btn_renders.jpg" onclick="opengallery();" /></a>
-				<a href="#" class="menu_btn_video"><img src="images/menu_btn_video.jpg" /></a>
-				<a href="#" class="menu_btn_tour"><img src="images/menu_btn_tour.jpg" /></a>
+				<a href="#" class="menu_btn_video"><img src="images/menu_btn_video.jpg"  onclick="openvideo();"/></a>
+				<a href="#" class="menu_btn_tour"><img src="images/menu_btn_tour.jpg" onclick="opentour();" /></a>
 				<a href="#" class="menu_btn_fotos"><img src="images/menu_btn_fotos.jpg" onclick="opengallery();" /></a>
 				<a href="#" class="menu_btn_mapa"><img src="images/menu_btn_mapa.jpg" /></a>
 			</div>
@@ -140,6 +140,20 @@
 			        </div>
 			    </div>
 			</div>
+		</div>
+		<!-- Contenido Tour -->
+		<div class="wrapper_general_tour">
+		  	<video width="100%" height="100%" controls id="video_tour"> 
+			  <source src="videos/video_nio.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<!-- Contenido video -->
+		<div class="wrapper_general_video">
+		  	<video width="100%" height="100%" controls id="video_proyecto"> 
+			  <source src="videos/video_nio.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 		</div>
 		<div class="lightbox_bg">
 			<div id="modal">
