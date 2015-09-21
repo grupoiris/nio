@@ -169,6 +169,9 @@
 			    <div class="swiper-container swiper-vivienda">
 			    	<!-- Add Pagination -->
 			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <!-- If we need navigation buttons -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
 			        <div class="swiper-wrapper ">
 			        	<div class="swiper-slide" style="background-image:url('images/renders/nio/vivienda/1.jpg')"></div>
 			        	<div class="swiper-slide" style="background-image:url('images/renders/nio/vivienda/2.jpg')"></div>
@@ -184,20 +187,19 @@
 			    </div>
 			</div>
 			<!-- Contenido Tour -->
-			<div class="wrapper_general_tour" rel="videos/tour_nio.mp4">
-			  	<!--<video width="100%" height="100%" controls id="video_tour"  rel="videos/tour_nio.mp4"> 
+			<!--<div class="wrapper_general_tour" rel="videos/tour_nio.mp4">
+			  	<video width="100%" height="100%" controls id="video_tour"  rel="videos/tour_nio.mp4"> 
 				  <source src="videos/tour_nio.mp4" type="video/mp4">
 					Your browser does not support the video tag.
-				</video>-->
-			</div>
+				</video>
+			</div>-->
 			<!-- Contenido video -->
-			<div class="wrapper_general_video">
-				<!--<iframe width="100%" height="100%;" src="videos/video_nio.mp4"></iframe>-->
-			  	<!--<video width="100%" height="100%" controls id="video_proyecto" rel="videos/video_nio.mp4"> 
+			<!--<div class="wrapper_general_video">
+			  <video width="100%" height="100%" controls id="video_proyecto" rel="videos/video_nio.mp4"> 
 				  <source src="videos/video_nio.mp4" type="video/mp4">
 					Your browser does not support the video tag.
-				</video>-->
-			</div>
+				</video>
+			</div>-->
 			<!-- Contenido Mapa -->
 			<div class="wrapper_general_mapa">
 			    <img src="images/mapa_nio.jpg" class="mapa_nio">
@@ -243,11 +245,11 @@
 			setTimeout(function(){ $('.icon_slide').click(); }, 1000);
 			$('.left_side').addClass("fadeInLeft animated");
 		});
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.swiper-vivienda', {
 		        pagination: '.swiper-pagination',
 		        paginationClickable: true,
 		        loop: true,
-		        autoplay : 2000
+		        autoplay : 1000
 		    });
 	</script>
 </html>

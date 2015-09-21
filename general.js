@@ -82,6 +82,12 @@ $( document ).ready(function() {
 			saveData(form_name, form_email, form_telefono, form_select, form_comentarios,form_terminos);
 		}	
 	});
+	
+	//  put class="doubleTap" on the elements you need to double tap
+	$(".body_ciudadela").doubleTap(function(){
+				alert("doubletap");
+	  });
+
 });
 
 function IsEmail(email) {
@@ -213,6 +219,7 @@ function opengallery(){
 	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
 		$('.menu_bottom').hide();
 	});
+	$('.left_side').animate({	    left: "-130px"	  }, 1000, function() {});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	if($( ".content_slide" ).is(":visible")){
@@ -223,6 +230,7 @@ function opengallery(){
 	$('.wrapper_general_galerias').addClass("fadeIn animated");
 }
 function closegallery(){
+	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.menu_bottom').show();
 	$('.wrapper_general_galerias').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
@@ -252,3 +260,26 @@ function closerender(){
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
 }
+
+
+
+/*  evento double tap */
+(function($) {
+     $.fn.doubleTap = function(doubleTapCallback) {
+         return this.each(function(){
+			var elm = this;
+			var lastTap = 0;
+			$(elm).bind('vmousedown', function (e) {
+                                var now = (new Date()).valueOf();
+				var diff = (now - lastTap);
+                                lastTap = now ;
+                                if (diff < 250) {
+		                    if($.isFunction( doubleTapCallback ))
+		                    {
+		                       doubleTapCallback.call(elm);
+		                    }
+                                }      
+			});
+         });
+    }
+})(jQuery);
