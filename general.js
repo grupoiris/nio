@@ -130,7 +130,9 @@ function opentour(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
-	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	$('.left_side').animate({	    left: "-130px"	  }, 1000, function() {});
@@ -143,6 +145,7 @@ function opentour(){
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closetour(){
+	$('.menu_bottom').show();
 	$('.wrapper_general_tour').html("");	
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.wrapper_general_tour').hide();
@@ -156,7 +159,9 @@ function openvideo(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
-	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	$('.left_side').animate({	    left: "-130px"	  }, 1000, function() {});
@@ -164,11 +169,11 @@ function openvideo(){
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
-	
 	$('.wrapper_general_tour').show();
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closevideo(){
+	$('.menu_bottom').show();
 	var myVideo = document.getElementById("video_proyecto"); 
 	myVideo.pause(); 
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
@@ -181,18 +186,20 @@ function openmapa(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
-	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	if($( ".content_slide" ).is(":visible")){
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
-	
 	$('.wrapper_general_mapa').show();
 	$('.wrapper_general_mapa').addClass("fadeIn animated");
 }
 function closemapa(){
+	$('.menu_bottom').show();
 	$('.wrapper_general_mapa').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
@@ -203,18 +210,20 @@ function opengallery(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
-	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	if($( ".content_slide" ).is(":visible")){
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
-	
 	$('.wrapper_general_galerias').show();
 	$('.wrapper_general_galerias').addClass("fadeIn animated");
 }
 function closegallery(){
+	$('.menu_bottom').show();
 	$('.wrapper_general_galerias').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
@@ -225,18 +234,20 @@ function openrender(){
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
-	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
 	$('.wrapper_general_inicial').removeClass("fadeIn");
 	$('.wrapper_general_inicial').addClass("fadeOut animated");
 	if($( ".content_slide" ).is(":visible")){
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
-	
 	$('.wrapper_general_renders').show();
 	$('.wrapper_general_renders').addClass("fadeIn animated");
 }
 function closerender(){
+	$('.menu_bottom').show();
 	$('.wrapper_general_renders').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
