@@ -30,14 +30,15 @@ $( document ).ready(function() {
 		$('.content_section').hide();
 		$('.'+content_to_show).show();
 		$( ".content_slide" ).animate({	     opacity: 1,  }, 1000, function() {});
-		
-		if(content_to_show=="content_oficinas" || content_to_show=="content_hotel" || content_to_show=="content_vivienda"){
+		if(content_to_show=="content_info" ||content_to_show=="content_oficinas" || content_to_show=="content_hotel" || content_to_show=="content_vivienda"){
 			$('.menu_btn_fotos').hide();
 			$('.menu_bottom').css('left',"41%");
 		}else{
 			$('.menu_btn_fotos').show();
 			$('.menu_bottom').css('left',"38%");
 		}
+		
+		$('.openGallery').attr("onclick","opengallery('"+content_to_show+"');");
 	});
 	
 	$('#saveData').click(function(){
@@ -84,7 +85,7 @@ $( document ).ready(function() {
 	});
 	
 	//  put class="doubleTap" on the elements you need to double tap
-	$(".body_ciudadela").doubleTap(function(){
+	$(".doubleTap").doubleTap(function(){
 				alert("doubletap");
 	  });
 
@@ -212,7 +213,12 @@ function closemapa(){
 }
 
 /*  ----------------      funciones galeria    ------------ */
-function opengallery(){
+function opengallery(gallerytoshow){
+	$('.swiper-container').hide();
+	$('.swiper-'+gallerytoshow).show();
+	
+	var swiper = new Swiper('.swiper-'+gallerytoshow, {       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
