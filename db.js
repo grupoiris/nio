@@ -81,3 +81,19 @@ function exeSQL(sql, func){
 			mensaje('SQL : error');
 		});
 }
+function sendData(){
+	webdb.executeSql('SELECT * FROM register', [],
+		function(tx, r){
+			var data_response;
+			var rows = r.rows,
+				tot = rows.length;
+				data_response += "<p>Total: "+tot+"</p>";
+				data_response += '<table><tr style="font-weight: bold;"><td>Nombre</td><td>Email</td><td>Telefono</td><td>Proyecto</td><td>Comentarios</td></tr>';
+			for(var i=0; i<tot; i++){
+				var row = rows.item(i);
+				data_response += "<tr><td>"+rows.item(i).nombre+"</td><td>"+rows.item(i).email+"</td><td>"+rows.item(i).telefono+"</td><td>"+rows.item(i).proyecto+"</td><td>"+rows.item(i).comentarios+"</td></tr>";
+			}
+			data_response +="</table>";
+		},
+		function(tx, e){});
+}

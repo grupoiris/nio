@@ -420,21 +420,7 @@ body{
 	right:20px;
 	top:20px;
 }
-#modal_resultados{
-	position: absolute;
-	width: 80%;
-	height: auto;
-	right: 10%;
-	background: rgba(200,200,200,0.7);
-	border:1px solid rgba(255,255,255,0.8);
-	top: 10%;
-	padding: 5% 2% 2%;
-}
-#modal_resultados  .close_modal{
-	position: absolute;
-	right:20px;
-	top:20px;
-}
+
 #modal{
 	/*opacity:0;*/
 	position: absolute;
@@ -599,7 +585,26 @@ body{
 	z-index: 0;
 }
 
-/* ------------------ estilos apra resultados --------------------- */
+/* ------------------ estilos para resultados --------------------- */
+#modal_resultados{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	right: 20%;
+	background: rgba(200,200,200,0.7);
+	border:1px solid rgba(255,255,255,0.8);
+	top: 10%;
+	padding: 5% 2% 2%;
+}
+#modal_resultados table{
+    margin: auto;
+    width: 90%;
+}
+#modal_resultados  .close_modal{
+	position: absolute;
+	right:20px;
+	top:20px;
+}
 #modal_resultados h2{
 	text-align: center;
     margin: 0;

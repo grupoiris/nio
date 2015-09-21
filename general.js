@@ -47,9 +47,47 @@ $( document ).ready(function() {
 		var form_select= $('.form_select').val();
 		var form_comentarios= $('.form_comentarios').val();
 		var form_terminos= $('.form_terminos').val();
-		saveData(form_name, form_email, form_telefono, form_select, form_comentarios,form_terminos);
+		var flag = 0;
+		
+		$('.register_form input').css('border','0px');
+		$('.register_form select').css('border','0px');
+		$('.input_check').css('border','0px');
+		
+		
+		if(form_telefono == ''){
+			$('.form_telefono').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(form_email == ''){
+			$('.form_email').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(form_select == 'Que proyecto te interesa'){
+			$('.form_select').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(form_name == ''){
+			$('.form_nombre').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(form_terminos == ''){
+			$('.form_terminos').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(!IsEmail(form_email)){
+			$('.form_email').css('border','1px solid #fff');
+			flag = 1;
+		}
+		if(flag==0){
+			saveData(form_name, form_email, form_telefono, form_select, form_comentarios,form_terminos);
+		}	
 	});
 });
+
+function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
 function closeTerms(){
 	$('.check_terms').prop('checked', true);
 	$('#modal_2').hide();
