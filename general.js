@@ -99,8 +99,14 @@ function opentour(){
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closetour(){
-	var myTour = document.getElementById("video_tour"); 
-	myTour.pause(); 
+	/*var myTour = document.getElementById("video_tour"); 
+	myTour.pause();*/
+	$('#video_tour').html("");
+	alert("a");
+	var video_url = $('#video_tour').attr('rel');
+	alert(video_url);
+	//$('#video_tour').html('<source src="'+video_url+'" type="video/mp4">');
+	
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.wrapper_general_tour').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
