@@ -546,7 +546,7 @@ body{
 	z-index: 0;
 }
 .swiper-container{
-	display: none;
+	/*display: none;*/
 }
 .swiper-container-render{
 	width: 100%;

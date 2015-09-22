@@ -214,6 +214,10 @@ function closemapa(){
 
 /*  ----------------      funciones galeria    ------------ */
 function opengallery(gallerytoshow){
+	if(!gallerytoshow){
+		gallerytoshow = "content_info";
+	}
+	
 	$('.swiper-container').hide();
 	$('.swiper-'+gallerytoshow).show();
 	
