@@ -22,6 +22,7 @@
 			    // save the file system for later access
 			    console.log(fileSystem.root.fullPath);
 			    window.rootFS = fileSystem.root;
+			    alert("got filesystem");
 			}
 			
 			document.addEventListener('deviceready', function() {   
@@ -29,11 +30,19 @@
 			    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
 			    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 			}, false);
+			
+			window.resolveLocalFileSystemURL(cordova.file.applicationDirectory+'www/index.html',success,fail);
+			function success(fileEntry){
+			alert("got the file object")
+			}
+			function fail(error){
+			alert("error");
+			}
 		</script>
 	</head>
 	<body>
 		<div class="content_wrapper content_nio_home">
-		<iframe width="420" height="315" src="videos/tour_nio.mp4" frameborder="0" allowfullscreen></iframe>
+		<iframe width="420" height="315" src="file:///android_asset/videos/tour_nio.mp4" frameborder="0" allowfullscreen></iframe>
 			<div class="col1" style="margin-top: 5%;">
 				<img src="images/nio.jpg" />
 			</div>
