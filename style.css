@@ -265,6 +265,14 @@ body{
     width: 100%;
     text-align: center;
 }
+.slide_content_nio{
+	position: absolute;
+    right: 20px;
+    top: 45%;
+}
+.content_nio2 img{
+	max-width: 95%;
+}
 .grey_bg_big{
 	margin-top: 9.5%;
     height: 522px;

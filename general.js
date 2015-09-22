@@ -217,11 +217,9 @@ function opengallery(gallerytoshow){
 	if(!gallerytoshow){
 		gallerytoshow = "content_info";
 	}
-	
 	$('.swiper-container').hide();
 	$('.swiper-'+gallerytoshow).show();
-	
-	var swiper = new Swiper('.swiper-'+gallerytoshow, {       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+	//var swiper = new Swiper('.swiper-'+gallerytoshow, {       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
 	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -249,6 +247,9 @@ function closegallery(){
 
 /*  ----------------      funciones redes    ------------ */
 function openrender(){
+	$('.swiper-container').hide();
+	$('.swiper_renders').show();
+	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
@@ -263,15 +264,37 @@ function openrender(){
 	}
 	$('.wrapper_general_renders').show();
 	$('.wrapper_general_renders').addClass("fadeIn animated");
+	
+	$('.left_side').animate({	    left: "-130px"	  }, 1000, function() {});
 }
 function closerender(){
+	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.menu_bottom').show();
 	$('.wrapper_general_renders').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
 }
 
+/* ------------------------nio content ---------------- */
 
+function nioContent(content_no){
+	if(content_no==1){
+		$( ".content_nio" ).show();
+		$( ".content_nio" ).removeClass("fadeInRight animated");
+		$( ".content_nio" ).addClass("fadeInRight animated");
+		
+		$( ".content_nio2" ).removeClass("fadeInRight animated");
+		$( ".content_nio2" ).hide();
+	}else{
+		$( ".content_nio2" ).show();
+		$( ".content_nio2" ).addClass("fadeInRight animated");
+		
+		$( ".content_nio" ).removeClass("fadeInRight animated");
+		$( ".content_nio" ).hide();
+		
+	}
+	
+}
 
 /*  evento double tap */
 (function($) {
