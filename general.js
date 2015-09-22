@@ -3,6 +3,7 @@ function icon_slide(action){
 	closerender();
 	closemapa();
 	closetour();
+	closevideo();
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	if(action =="open"){
@@ -126,10 +127,11 @@ function openResultados(){
 }
 /*  ----------------      funciones tour    ------------ */
 function opentour(){
-	
+	$('.wrapper_general_tour').show();
 	/*var myTour = document.getElementById("video_tour"); 
 	myTour.play();*/
 	var video_url = $('.wrapper_general_tour').attr('rel');
+	$('.video_tour').html('<iframe width="1000" height="800" src="http://irisdev.co/nio/videos/'+video_url+'" frameborder="0" allowfullscreen ></iframe>');
 	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -149,6 +151,8 @@ function opentour(){
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closetour(){
+	$('.wrapper_general_tour').hide();
+	$('.video_tour').html("");
 	$('.menu_bottom').show();
 	//$('.wrapper_general_tour').html("");	
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
@@ -158,8 +162,12 @@ function closetour(){
 }
 /*  ----------------      funciones video    ------------ */
 function openvideo(){
-	var myVideo = document.getElementById("video_proyecto"); 
-	myVideo.play(); 
+	$('.wrapper_general_video').show();
+	/*var myVideo = document.getElementById("video_proyecto"); 
+	myVideo.play();*/ 
+	var video_url = $('.wrapper_general_video').attr('rel');
+	$('.video_video').html('<iframe width="1000" height="800" src="http://irisdev.co/nio/videos/'+video_url+'" frameborder="0" allowfullscreen ></iframe>');
+	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
 	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
@@ -177,9 +185,9 @@ function openvideo(){
 	$('.wrapper_general_tour').addClass("fadeIn animated");
 }
 function closevideo(){
+	$('.wrapper_general_video').hide();
 	$('.menu_bottom').show();
-	var myVideo = document.getElementById("video_proyecto"); 
-	myVideo.pause(); 
+	$('.video_video').html("");
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.wrapper_general_tour').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
