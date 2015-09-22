@@ -94,6 +94,20 @@ function sendData(){
 				data_response += "<tr><td>"+rows.item(i).nombre+"</td><td>"+rows.item(i).email+"</td><td>"+rows.item(i).telefono+"</td><td>"+rows.item(i).proyecto+"</td><td>"+rows.item(i).comentarios+"</td></tr>";
 			}
 			data_response +="</table>";
+			sendContact(data_response);
 		},
 		function(tx, e){});
+}
+function sendContact(data_response) {
+	alert("success");
+    jQuery.ajax({
+        url: "http://irisdev.co/nio/servicios.php",
+        data:'info_mail='+data_response,
+        type: "POST",
+        success:function(data){
+        	console.log("success sendContact" );
+            //$(".mail_status").html(data);
+        },
+        error:function (){}
+    });
 }
