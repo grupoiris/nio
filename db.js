@@ -99,14 +99,13 @@ function sendData(){
 		function(tx, e){});
 }
 function sendContact(data_response) {
-	alert("success");
+	alertify.success('Informacion de contacto enviada');
     jQuery.ajax({
         url: "http://irisdev.co/nio/servicios.php",
         data:'info_mail='+data_response,
         type: "POST",
         success:function(data){
-        	console.log("success sendContact" );
-            //$(".mail_status").html(data);
+        	alertify.success('success sendContact"');
         },
         error:function (){}
     });

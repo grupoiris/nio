@@ -76,15 +76,15 @@ $( document ).ready(function() {
 		}
 		if(flag==0){
 			saveData(form_name, form_email, form_telefono, form_select, form_comentarios);
-			alert("formulario guardado");
+			alertify.success('Formulario guardado');
 		}else{
-			alert("error en el formulario");
+			alertify.error('Valida Tu formulario');
 		}
 	});
 	
 	//  put class="doubleTap" on the elements you need to double tap
 	$(".doubleTap").doubleTap(function(){
-				alert("doubletap");
+			alertify.success('double tap');
 	  });
 
 });
