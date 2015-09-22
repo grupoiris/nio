@@ -25,19 +25,15 @@
 			    alert("got filesystem");
 			}
 			
+			function fail(error){
+			alert("error");
+			}
 			document.addEventListener('deviceready', function() {   
 				alert("got deviceready");             
 			    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
 			    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 			}, false);
 			
-			window.resolveLocalFileSystemURL(cordova.file.applicationDirectory+'www/index.html',success,fail);
-			function success(fileEntry){
-			alert("got the file object")
-			}
-			function fail(error){
-			alert("error");
-			}
 		</script>
 	</head>
 	<body>
