@@ -130,8 +130,6 @@ function opentour(){
 	/*var myTour = document.getElementById("video_tour"); 
 	myTour.play();*/
 	var video_url = $('.wrapper_general_tour').attr('rel');
-	alert("a");
-	window.plugins.videoPlayer.play(video_url);
 	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -152,7 +150,7 @@ function opentour(){
 }
 function closetour(){
 	$('.menu_bottom').show();
-	$('.wrapper_general_tour').html("");	
+	//$('.wrapper_general_tour').html("");	
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
 	$('.wrapper_general_tour').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
