@@ -47,7 +47,6 @@ $( document ).ready(function() {
 		var form_email= $('.form_email').val();
 		var form_select= $('.form_select').val();
 		var form_comentarios= $('.form_comentarios').val();
-		var form_terminos= $('.form_terminos').val();
 		var flag = 0;
 		
 		$('.register_form input').css('border','0px');
@@ -71,17 +70,16 @@ $( document ).ready(function() {
 			$('.form_nombre').css('border','1px solid #fff');
 			flag = 1;
 		}
-		if(form_terminos == ''){
-			$('.form_terminos').css('border','1px solid #fff');
-			flag = 1;
-		}
 		if(!IsEmail(form_email)){
 			$('.form_email').css('border','1px solid #fff');
 			flag = 1;
 		}
 		if(flag==0){
-			saveData(form_name, form_email, form_telefono, form_select, form_comentarios,form_terminos);
-		}	
+			saveData(form_name, form_email, form_telefono, form_select, form_comentarios);
+			alert("formulario guardado");
+		}else{
+			alert("error en el formulario");
+		}
 	});
 	
 	//  put class="doubleTap" on the elements you need to double tap
