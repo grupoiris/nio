@@ -25,5 +25,4 @@
 	<icon src="res/icon/icon.png" /> 	
 	<gap:splash src="res/screen/screen.png" />
 	
-<gap:plugin name="com.moust.cordova.videoplayer" version="1.0.0" />
 </widget>
