@@ -28,7 +28,9 @@
 			function fail(error){
 			alert("error");
 			}
-			document.addEventListener('deviceready', function() {   
+			document.addEventListener('deviceready', function() {
+				alert(window.location.href);
+				$('.divtest').html("");   
 				alert("got deviceready");             
 			    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
 			    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
