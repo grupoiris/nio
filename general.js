@@ -1,10 +1,3 @@
-function gotFS(fileSystem) {
-    console.log("got filesystem");
-    // save the file system for later access
-    console.log(fileSystem.root.fullPath);
-    window.rootFS = fileSystem.root;
-    alert( window.rootFS);
-}
 function icon_slide(action){
 	closegallery();
 	closerender();
@@ -25,10 +18,6 @@ function icon_slide(action){
 	}
 }
 $( document ).ready(function() {
-	document.addEventListener('deviceready', function() {                
-	    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
-	    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-	}, false);
 	$('.sub_menu_left_item').click(function(){
 		closegallery();
 		closerender();

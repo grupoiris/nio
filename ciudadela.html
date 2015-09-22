@@ -24,9 +24,26 @@
 		<link rel="stylesheet" href="alertifyjs/css/alertify.min.css">
 		<link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
 		<script src="alertifyjs/alertify.min.js"></script>
+		
+		<script>
+		  function gotFS(fileSystem) {
+		  	 alert( "gotFS");
+			    console.log("got filesystem");
+			    // save the file system for later access
+			    console.log(fileSystem.root.fullPath);
+			    window.rootFS = fileSystem.root;
+			    alert( window.rootFS);
+			}
+		  function onDeviceReady() {
+		  	alert("a");
+		  	window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+			    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+		  };
+			document.addEventListener("deviceready", onDeviceReady,false);
+		</script>
 	</head>
 
-	<body class="body_ciudadela">
+	<body class="body_ciudadela" onready="onDeviceReady();">
 		<!-- menu costado izquierdo -->
 		<div class="left_side">
 			<a href="home.html" class="boton_inicio">inicio</a>
