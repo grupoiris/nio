@@ -25,4 +25,5 @@
 	<icon src="res/icon/icon.png" /> 	
 	<gap:splash src="res/screen/screen.png" />
 	
+	<plugin name="VideoPlayer" value="com.phonegap.plugins.video.VideoPlayer"/>
 </widget>

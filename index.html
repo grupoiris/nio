@@ -13,28 +13,11 @@
 		<link rel="stylesheet" type="text/css" href="animate.css" />	
 		<link rel="stylesheet" type="text/css" href="celulares.css" />	
 		
-		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="general.js"></script>
 		
-		<script>
-		  function gotFS(fileSystem) {
-		  	 alert( "gotFS");
-			    console.log("got filesystem");
-			    // save the file system for later access
-			    console.log(fileSystem.root.fullPath);
-			    window.rootFS = fileSystem.root;
-			    alert( window.rootFS);
-			}
-		  function onDeviceReady() {
-		  	alert("a");
-		  	document.requestFileSystem  = document.requestFileSystem || document.webkitRequestFileSystem;
-			    document.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-		  };
-			document.addEventListener("deviceready", onDeviceReady,false);
-		</script>
 	</head>
-	<body  onready="onDeviceReady();">
+	<body>
 		<div class="content_wrapper content_nio_home">
 			<div class="col1" style="margin-top: 5%;">
 				<img src="images/nio.jpg" />
