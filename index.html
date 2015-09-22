@@ -15,7 +15,20 @@
 		
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="general.js"></script>
-		
+		<script>
+			function gotFS(fileSystem) {
+			   alert("got filesystem");
+			    // save the file system for later access
+			    console.log(fileSystem.root.fullPath);
+			    window.rootFS = fileSystem.root;
+			}
+			
+			document.addEventListener('deviceready', function() {   
+				alert("got deviceready");             
+			    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+			    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+			}, false);
+		</script>
 	</head>
 	<body>
 		<div class="content_wrapper content_nio_home">
