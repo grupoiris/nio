@@ -91,7 +91,7 @@ function sendData(){
 				data_response += '<table><tr style="font-weight: bold;"><td>Nombre</td><td>Email</td><td>Telefono</td><td>Proyecto</td><td>Comentarios</td></tr>';
 			for(var i=0; i<tot; i++){
 				var row = rows.item(i);
-				data_response += "<tr><td>"+rows.item(i).nombre+"</td><td>"+rows.item(i).email+"</td><td>"+rows.item(i).telefono+"</td><td>"+rows.item(i).proyecto+"</td><td>"+rows.item(i).comentarios+"</td></tr>";
+				data_response += "<tr style='text-align: left;'><td>"+rows.item(i).nombre+"</td><td>"+rows.item(i).email+"</td><td>"+rows.item(i).telefono+"</td><td>"+rows.item(i).proyecto+"</td><td>"+rows.item(i).comentarios+"</td></tr>";
 			}
 			data_response +="</table>";
 			sendContact(data_response);

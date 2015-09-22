@@ -86,7 +86,6 @@ $( document ).ready(function() {
 	$(".doubleTap").doubleTap(function(){
 			alertify.success('double tap');
 	  });
-
 });
 
 function IsEmail(email) {
@@ -284,6 +283,7 @@ function nioContent(content_no){
 		$( ".content_nio2" ).removeClass("fadeInRight animated");
 		$( ".content_nio2" ).hide();
 	}else{
+		$('.slide_content_nio').css('display','block');
 		$( ".content_nio2" ).show();
 		$( ".content_nio2" ).addClass("fadeInRight animated");
 		
