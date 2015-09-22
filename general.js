@@ -5,11 +5,6 @@ function gotFS(fileSystem) {
     window.rootFS = fileSystem.root;
     alert( window.rootFS);
 }
-
-document.addEventListener('deviceready', function() {                
-    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-}, false);
 function icon_slide(action){
 	closegallery();
 	closerender();
@@ -30,6 +25,10 @@ function icon_slide(action){
 	}
 }
 $( document ).ready(function() {
+	document.addEventListener('deviceready', function() {                
+	    window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+	    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+	}, false);
 	$('.sub_menu_left_item').click(function(){
 		closegallery();
 		closerender();
