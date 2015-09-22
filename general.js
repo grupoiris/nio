@@ -76,9 +76,9 @@ $( document ).ready(function() {
 		}
 		if(flag==0){
 			saveData(form_name, form_email, form_telefono, form_select, form_comentarios);
-			alertify.success('Formulario guardado');
+			alertify.success('Tu información ya fue guardada ');
 		}else{
-			alertify.error('Valida Tu formulario');
+			alertify.error('Valida tu información');
 		}
 	});
 	
