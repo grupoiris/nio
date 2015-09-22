@@ -36,7 +36,7 @@
 			}
 		  function onDeviceReady() {
 		  	alert("a");
-		  	document.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+		  	document.requestFileSystem  = document.requestFileSystem || document.webkitRequestFileSystem;
 			    document.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 		  };
 			document.addEventListener("deviceready", onDeviceReady,false);
