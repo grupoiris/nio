@@ -298,3 +298,8 @@ function nioContent(content_no){
 	}
 	
 }
+
+function video(){
+	alert("a");
+	VideoPlayer.play("file:///android_asset/www/videos/tour_kea.mp4");
+}
