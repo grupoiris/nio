@@ -274,6 +274,9 @@ body{
     right: 20px;
     top: 45%;
 }
+.content_nio2{
+	display: none;
+}
 .content_nio2 img{
 	max-width: 95%;
 }
