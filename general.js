@@ -8,7 +8,7 @@ function icon_slide(action){
 	closevideo();
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
-	if(pathname != "/nio/monteria.html" && pathname != "nio/nio.html"){
+	if(pathname == "/nio/ciudadela.html" || pathname == "/nio/kea.html"){
 		if(action =="open"){
 			$( ".sub_menu_left" ).animate({	    left: "130"	  }, 1000, function() {});
 			$( ".menu_bottom" 	).animate({	    bottom: "0"	  }, 1000, function() {});
