@@ -160,7 +160,7 @@ body{
 }
 .left_side .boton_inicio{
 	background: #474646;
-	color: #8e8d8d;
+	color: #ededed;
 	width: 100%;
 	position: absolute;
 	top:0;
@@ -277,9 +277,10 @@ body{
 .content_nio2{
 	display: none;
 }
-.content_nio2 img{
+.content_nio img{
 	max-width: 95%;
 }
+
 .grey_bg_big{
 	margin-top: 9.5%;
     height: 522px;
