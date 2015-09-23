@@ -301,5 +301,5 @@ function nioContent(content_no){
 
 function video(){
 	alert("a");
-	window.plugins.videoPlayer.play("file:///android_asset/www/videos/tour_kea.mp4");
+	window.plugins.videoPlayer.play("file:///android_asset/www/tour_kea.mp4");
 }
