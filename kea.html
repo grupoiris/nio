@@ -124,7 +124,7 @@
 			<div class="wrapper_general_renders">
 				<img src="images/close_galeria.png" class="close_gallery" onclick="closegallery();$('.icon_slide').click();">
 				<!-- Swiper -->
-			    <div class="swiper-container  swiper_renders">
+			    <div class="swiper-container swiper_renders">
 			    	<!-- Add Pagination -->
 			        <div class="swiper-pagination swiper-pagination-white"></div>
 			         <!-- If we need navigation buttons -->
@@ -214,5 +214,6 @@
 		});
 		var swiper 	= new Swiper('.swiper-content_info', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
 		var swiper2 = new Swiper('.swiper_renders', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		$('.swiper_renders').hide();
 	</script>
 </html>
