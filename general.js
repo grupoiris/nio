@@ -82,11 +82,6 @@ $( document ).ready(function() {
 			alertify.error('Valida tu información');
 		}
 	});
-	
-	//  put class="doubleTap" on the elements you need to double tap
-	$(".doubleTap").doubleTap(function(){
-			alertify.success('double tap');
-	  });
 });
 
 function IsEmail(email) {
@@ -304,23 +299,11 @@ function nioContent(content_no){
 	
 }
 
-/*  evento double tap */
-(function($) {
-     $.fn.doubleTap = function(doubleTapCallback) {
-         return this.each(function(){
-			var elm = this;
-			var lastTap = 0;
-			$(elm).bind('vmousedown', function (e) {
-                                var now = (new Date()).valueOf();
-				var diff = (now - lastTap);
-                                lastTap = now ;
-                                if (diff < 250) {
-		                    if($.isFunction( doubleTapCallback ))
-		                    {
-		                       doubleTapCallback.call(elm);
-		                    }
-                                }      
-			});
-         });
-    }
-})(jQuery);
+function init(){
+    document.addEventListener("deviceready", console.log('ready'), true);
+}
+
+function playVideo(vidUrl) {
+	alert("a");
+    window.plugins.videoPlayer.play(vidUrl);
+}
