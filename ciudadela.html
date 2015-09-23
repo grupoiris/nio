@@ -175,7 +175,7 @@
 				 <!-- Swiper info -->
 			    <div class="swiper-container swiper-content_planos_vivienda ">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination6 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -195,7 +195,7 @@
 			 	<img src="images/close_galeria.png" class="close_gallery" onclick="closeplanos()"> 
 			    <div class="swiper-container swiper-content_planos_oficina">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination7 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -217,7 +217,7 @@
 				 <!-- Swiper info -->
 			    <div class="swiper-container swiper-content_info">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination2 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -232,7 +232,7 @@
 			    <!-- Swiper vivienda -->
 			    <div class="swiper-container swiper-content_vivienda">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination3 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -252,7 +252,7 @@
 			    <!-- Swiper oficina -->
 			    <div class="swiper-container swiper-content_oficinas">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination4 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -270,7 +270,7 @@
 			    <!-- Swiper hotel -->
 			    <div class="swiper-container swiper-content_hotel">
 			    	<!-- Add Pagination -->
-			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <div class="swiper-pagination5 swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
 				    <div class="swiper-button-prev"></div>
 				    <div class="swiper-button-next"></div>
@@ -348,14 +348,14 @@
 			$('.left_side').addClass("fadeInLeft animated");
 			
 		});
-		var swiper = new Swiper('.swiper-content_general', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		var swiper2 = new Swiper('.swiper-content_info', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		var swiper3 = new Swiper('.swiper-content_vivienda', 	{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		var swiper4 = new Swiper('.swiper-content_oficinas', 	{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		var swiper5 = new Swiper('.swiper-content_hotel', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper = new Swiper('.swiper-content_general', 		{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper2 = new Swiper('.swiper-content_info', 		{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper3 = new Swiper('.swiper-content_vivienda', 	{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper4 = new Swiper('.swiper-content_oficinas', 	{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper5 = new Swiper('.swiper-content_hotel', 		{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
 		
-		var swiper6 = new Swiper('.swiper-content_planos_vivienda', 	{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		var swiper7 = new Swiper('.swiper-content_planos_oficina', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper6 = new Swiper('.swiper-content_planos_vivienda', 	{ nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
+		var swiper7 = new Swiper('.swiper-content_planos_oficina', 		{  nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
 		$('.wrapper_general_planos').hide();
 	</script>
 </html>

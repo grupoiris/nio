@@ -448,6 +448,7 @@ body{
 	position: absolute;
 	width: 30%;
 	height: 55%;
+	    min-height: 490px;
 	right: 30%;
 	background: rgba(200,200,200,0.7);
 	border:1px solid rgba(255,255,255,0.8);
@@ -605,6 +606,7 @@ body{
 	    top: 10px;
 	    bottom:auto; 
 }
+
 
 /*         ----------------- Estilos para planos ----------------  */
 .wrapper_general_planos{
