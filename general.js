@@ -92,9 +92,6 @@ $( document ).ready(function() {
 		}
 	});
 	
-	$('.lightbox_bg').click(function(){
-		closeModal()
-	});
 });
 
 function IsEmail(email) {
