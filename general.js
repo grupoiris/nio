@@ -285,7 +285,7 @@ function nioContent(content_no){
 		$( ".content_nio" ).removeClass("fadeInRight animated");
 		$( ".content_nio" ).addClass("fadeInRight animated");
 		
-		$( ".content_nio2" ).removeClass("fadeInRight animated");
+		$( ".content_nio2" ).removeClass("fadeInRight animatexc d");
 		$( ".content_nio2" ).hide();
 	}else{
 		$('.slide_content_nio').css('display','block');
@@ -301,5 +301,5 @@ function nioContent(content_no){
 
 function video(){
 	alert("a");
-	VideoPlayer.play("file:///android_asset/www/videos/tour_kea.mp4");
+	window.plugins.videoPlayer.play("file:///android_asset/www/videos/tour_kea.mp4");
 }
