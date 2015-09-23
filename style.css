@@ -396,6 +396,12 @@ body{
 	margin-top: -5px;
 	border-bottom: 10px solid rgba(255,255,255,0.6);
 }
+.menu_bottom .menu_btn_planos{
+	display: none;
+}
+.menu_bottom .menu_btn_planos_oficina{
+	display: none;
+}
 
 .blur{
 	-webkit-filter: blur(3px);
@@ -601,6 +607,23 @@ body{
 .swiper-container-horizontal>.swiper-pagination{
 	    top: 10px;
 	    bottom:auto; 
+}
+
+/*         ----------------- Estilos para planos ----------------  */
+.wrapper_general_planos{
+	width:100%;
+	height:100%;
+	display:block;
+	opacity:0;
+	z-index: 0;
+	position: absolute;	
+}
+.wrapper_general_planos img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+	z-index: 0;
 }
 /*         ----------------- Estilos para galeria ----------------  */
 .wrapper_general_renders{

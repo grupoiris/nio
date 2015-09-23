@@ -46,6 +46,22 @@ $( document ).ready(function() {
 			$('.menu_btn_fotos').show();
 			$('.menu_bottom').css('left',"38%");
 		}
+		if(content_to_show=="content_vivienda"){
+			$('.menu_btn_planos').show();
+			$('.menu_btn_planos_oficina').hide();
+			$('.menu_bottom').css('left',"38%");
+		}
+		else{ 
+			if(content_to_show=="content_oficinas" ){
+				$('.menu_btn_planos_oficina').show();
+				$('.menu_btn_planos').hide();
+				$('.menu_bottom').css('left',"38%");
+			}else{
+				$('.menu_btn_planos').hide();
+				$('.menu_btn_planos_oficina').hide();
+				$('.menu_bottom').css('left',"41%");
+			}
+		}
 		
 		$('.openGallery').attr("onclick","opengallery('"+content_to_show+"');");
 	});
@@ -221,6 +237,38 @@ function closemapa(){
 	$('.wrapper_general_mapa').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
+}
+/*  ----------------      funciones planos    ------------ */
+function openplanos(gallerytoshow){
+	$('.swiper-container').hide();
+	$('.swiper-'+gallerytoshow).show();
+	$('.swiper-content_planos_'+gallerytoshow).show();
+	
+	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
+	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
+	$( ".sub_menu_left" ).animate({	    left: "0"	  }, 1000, function() {});
+	$( ".menu_bottom" 	).animate({	    bottom: "-80"	  }, 1000, function() {
+		$('.menu_bottom').hide();
+	});
+	$('.left_side').animate({	    left: "-130px"	  }, 1000, function() {});
+	$('.wrapper_general_inicial').removeClass("fadeIn");
+	$('.wrapper_general_inicial').addClass("fadeOut animated");
+	if($( ".content_slide" ).is(":visible")){
+		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
+		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
+	}
+	$('.wrapper_general_planos').show();
+	$('.wrapper_general_planos').addClass("fadeIn animated");
+}
+function closeplanos(){
+	$('.icon_slide').click();
+	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
+	$('.menu_bottom').show();
+	$('.wrapper_general_planos').hide();
+	$('.wrapper_general_inicial').removeClass("fadeOut animated");
+	$('.wrapper_general_inicial').addClass("fadeIn");
+	$('.menu_btn_planos_oficina').hide();
+	$('.menu_btn_planos').hide();
 }
 
 /*  ----------------      funciones galeria    ------------ */
