@@ -173,7 +173,7 @@
 			<div class="wrapper_general_planos wrapper_general_planos_vivienda">
 				<img src="images/close_galeria.png" class="close_gallery" onclick="closeplanos()">
 				 <!-- Swiper info -->
-			    <div class="swiper-container swiper-content_planos_vivienda">
+			    <div class="swiper-container swiper-content_planos_vivienda ">
 			    	<!-- Add Pagination -->
 			        <div class="swiper-pagination swiper-pagination-white"></div>
 			        <!-- If we need navigation buttons -->
@@ -190,7 +190,9 @@
 			        	<div class="swiper-slide" style="background-image:url('images/renders/nio/planos_vivienda/8.jpg')"></div>
 			        </div>
 			    </div>
-			    
+			 </div>
+			 <div class="wrapper_general_planos wrapper_general_planos_oficina" >  
+			 	<img src="images/close_galeria.png" class="close_gallery" onclick="closeplanos()"> 
 			    <div class="swiper-container swiper-content_planos_oficina">
 			    	<!-- Add Pagination -->
 			        <div class="swiper-pagination swiper-pagination-white"></div>
@@ -354,6 +356,6 @@
 		
 		var swiper6 = new Swiper('.swiper-content_planos_vivienda', 	{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
 		var swiper7 = new Swiper('.swiper-content_planos_oficina', 		{       pagination: '.swiper-pagination',      paginationClickable: true,      nextButton: '.swiper-button-next',  		prevButton: '.swiper-button-prev',       loop: true,       autoplay : 1000    });
-		
+		$('.wrapper_general_planos').hide();
 	</script>
 </html>
