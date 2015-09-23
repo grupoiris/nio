@@ -258,7 +258,6 @@ function openplanos(gallerytoshow){
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
 	$('.wrapper_general_planos').show();
-	$('.wrapper_general_planos').addClass("fadeIn animated");
 }
 function closeplanos(){
 	$('.icon_slide').click();
