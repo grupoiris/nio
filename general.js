@@ -131,7 +131,9 @@ function opentour(){
 	/*var myTour = document.getElementById("video_tour"); 
 	myTour.play();*/
 	var video_url = $('.wrapper_general_tour').attr('rel');
-	$('.video_tour').html('<iframe width="1000" height="800" src="http://irisdev.co/nio/videos/'+video_url+'" frameborder="0" allowfullscreen ></iframe>');
+	$('.video_tour').html('<iframe width="100%" height="100%" src="http://irisdev.co/nio/videos/'+video_url+'" frameborder="0" allowfullscreen ></iframe>');
+	/*$('video[name=media]').css('margin','0');
+	$('video[name=media]').css('width','100%');*/
 	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
 	$('.icon_slide').attr({      onclick: $('.icon_slide ').attr('data-other-action')     , 'data-other-action': $('.icon_slide ').attr('onclick')    })
@@ -162,6 +164,7 @@ function closetour(){
 }
 /*  ----------------      funciones video    ------------ */
 function openvideo(){
+	closetour();
 	$('.wrapper_general_video').show();
 	/*var myVideo = document.getElementById("video_proyecto"); 
 	myVideo.play();*/ 
@@ -181,15 +184,14 @@ function openvideo(){
 		$('.sub_menu_left_item').removeClass("sub_menu_left_active");
 		$( ".content_slide" ).animate({	     opacity: 0,  }, 1000, function() {	$( ".content_slide" ).hide(); });
 	}
-	$('.wrapper_general_tour').show();
-	$('.wrapper_general_tour').addClass("fadeIn animated");
+	$('.wrapper_general_video').show();
+	$('.wrapper_general_video').addClass("fadeIn animated");
 }
 function closevideo(){
-	$('.wrapper_general_video').hide();
 	$('.menu_bottom').show();
 	$('.video_video').html("");
 	$('.left_side').animate({	    left: "0px"	  }, 500, function() {});
-	$('.wrapper_general_tour').hide();
+	$('.wrapper_general_video').hide();
 	$('.wrapper_general_inicial').removeClass("fadeOut animated");
 	$('.wrapper_general_inicial').addClass("fadeIn");
 }
