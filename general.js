@@ -298,12 +298,3 @@ function nioContent(content_no){
 	}
 	
 }
-
-function init(){
-    document.addEventListener("deviceready", console.log('ready'), true);
-}
-
-function playVideo(vidUrl) {
-	alert(vidUrl);
-    window.plugins.videoPlayer.play(vidUrl);
-}
