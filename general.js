@@ -304,6 +304,6 @@ function init(){
 }
 
 function playVideo(vidUrl) {
-	alert("a");
+	alert(vidUrl);
     window.plugins.videoPlayer.play(vidUrl);
 }
