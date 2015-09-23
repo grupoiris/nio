@@ -21,13 +21,12 @@ function icon_slide(action){
 	}
 }
 $( document ).ready(function() {
-	$('.swiper-container').doubletap(
-	    /** doubletap-dblclick callback */
+	/*$('.swiper-container').doubletap(
 	    function(event){
 	       icon_slide('close')
 	    },
 	    400
-	);
+	);*/
 	$('.sub_menu_left_item').click(function(){
 		closegallery();
 		closerender();
