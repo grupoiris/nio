@@ -132,7 +132,7 @@ function openRegister(){
 function closeModal(){
 	icon_slide('open');
 	$('.wrapper_general').removeClass('blur');
-	$('.wrapper_general').children().show();
+	$('.wrapper_general_inicial').show();
 	$('.lightbox_bg').removeClass("fadeIn animated");
 	$('.lightbox_bg').hide();
 }
@@ -241,7 +241,6 @@ function closemapa(){
 /*  ----------------      funciones planos    ------------ */
 function openplanos(gallerytoshow){
 	$('.swiper-container').hide();
-	$('.swiper-'+gallerytoshow).show();
 	$('.swiper-content_planos_'+gallerytoshow).show();
 	
 	$('.icon_slide img').attr({	src: $('.icon_slide img').attr('data-other-src')         , 'data-other-src': $('.icon_slide img').attr('src') 	    })
